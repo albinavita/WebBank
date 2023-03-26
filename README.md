@@ -12,6 +12,6 @@ ___
 1. Создала в PostgreSQL базу данных 
 2. Создан класс сущности Balance с полями id и currentBalance  
 
-![таблица balance](balance.png)
+                ![таблица balance](balance.png)
 
 ---
