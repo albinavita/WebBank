@@ -7,7 +7,4 @@
 + Отобразить список операций за выбранный период;
 + Перевести заданную сумму другому пользователю.
 ___
-class balance {
-  id
-  current_balance
-}  
+![](https://drive.google.com/file/d/1RmJXaMeBuuErslTbw68OcUfAjbUtQl5g/view?usp=sharing)  
