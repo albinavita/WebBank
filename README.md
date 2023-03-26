@@ -22,6 +22,7 @@ ___
 ## Шаг 2. Создать класс по работе с базой данных ##  
 1. Создан класс BalanceService в котором реализованы методы *getBalance, putMoneу, takeMoney*  
 2. Создан файл *application.properties* для хранения настроек  
+3. Добавлены в функцию main вызовы методов *getBalance, putMoneу, takeMoney*
 
 ## Шаг 3. Создайте Rest API ##
 1. Создан интерфейс BalanceRepository 
