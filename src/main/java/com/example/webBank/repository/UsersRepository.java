@@ -1,9 +1,9 @@
 package com.example.webBank.repository;
 
-import com.example.webBank.model.Balance;
+import com.example.webBank.model.Users;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface BalanceRepository extends JpaRepository<Balance, Long> {
+public interface UsersRepository extends JpaRepository<Users, Long> {
 }
