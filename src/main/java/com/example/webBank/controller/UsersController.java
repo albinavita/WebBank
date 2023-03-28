@@ -6,25 +6,25 @@ import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
-@RestController("/balanse")
+@RestController("/users")
 @RequiredArgsConstructor
 public class UsersController {
 
     private final UsersService usersService;
 
-    @GetMapping("/{id}")
+    @GetMapping("/getbalance/{id}")
      public Long getBalance(@PathVariable Long id) {
        return usersService.getBalance(id);
     }
 
-    @PostMapping("/{putMoney}")
-    public void putMoney(@RequestBody Users users) {
-        usersService.putMoney(users.getId(), users.getCurrentBalance());
+    @PutMapping("/putMoney")
+    public void putMoney(@RequestParam Long id, @RequestParam Long amount) {
+        usersService.putMoney(id, amount);
     }
 
-    @PostMapping("/{takeMoney}")
-    public void takeMoney(@RequestBody Users users) {
-        usersService.takeMoney(users.getId(), users.getCurrentBalance());
+    @PutMapping("/takeMoney")
+    public void takeMoney(@RequestParam Long id, @RequestParam Long amount) {
+        usersService.takeMoney(id, amount);
 
     }
 }
