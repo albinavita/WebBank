@@ -15,16 +15,8 @@ public class Users {
     @Column(name="id")
     private Long id;
 
-    @Column(name="balance")
+    @Column(name="currentBalance")
     @JsonView(Views.CurrentBalance.class)
     private Long currentBalance;
-
-    @Column(name="firstName")
-    @JsonView(Views.FirstName.class)
-    private String firstName;
-
-    @Column(name="lastName")
-    @JsonView(Views.LarstName.class)
-    private String lastName;
 
 }
