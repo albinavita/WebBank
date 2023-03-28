@@ -15,15 +15,16 @@ ___
 + Spring Web
 + Spring Data Jpa
 + PostgreSQL Driver
-4. Создан класс сущности Balance с полями id и currentBalance  
+4. Создан класс сущности Users с полями id,currentBalance, firstName и lastName  
  
 ![таблица balance](balance.png)
                 
 ## Шаг 2. Создать класс по работе с базой данных ##  
-1. Создан класс BalanceService в котором реализованы методы *getBalance, putMoneу, takeMoney*  
+1. Создан класс UsersService в котором реализованы методы *getBalance, putMoneу, takeMoney*  
 2. Создан файл *application.properties* для хранения настроек  
 3. Добавлены в функцию main вызовы методов *getBalance, putMoneу, takeMoney*
 
 ## Шаг 3. Создайте Rest API ##
-1. Создан интерфейс BalanceRepository 
+1. Создан интерфейс UsersRepository 
+2. Создан класс UsersController  
 ---
