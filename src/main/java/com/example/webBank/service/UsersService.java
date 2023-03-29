@@ -14,8 +14,8 @@ public class UsersService {
     private UsersRepository balanceRepository;
 
 
-    public Users save(Users balance) {
-        return balanceRepository.save(balance);
+    public Users save(Users users) {
+        return balanceRepository.save(users);
     }
 
     public Long getBalance(long id){

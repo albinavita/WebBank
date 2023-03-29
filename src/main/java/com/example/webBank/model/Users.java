@@ -7,7 +7,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name="balance")
+@Table(name="user")
 public class Users {
 
     @Id
@@ -15,10 +15,9 @@ public class Users {
     @Column(name="id")
     private Long id;
 
-    @Column(name="currentBalance")
+    @Column(name="balance")
     @JsonView(Views.CurrentBalance.class)
     private Long currentBalance;
-
 
     @Column(name="firstName")
     @JsonView(Views.FirstName.class)
